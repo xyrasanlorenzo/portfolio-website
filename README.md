@@ -4,7 +4,7 @@ my personal projects to be put on the
 Portfolio page.✨</p>
 
 
-###Color Palette🎨:
+Color Palette🎨:
 <ul>
 <li>#60be63</li>
 <li>#fbff11</li>
