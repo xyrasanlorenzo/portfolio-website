@@ -1,7 +1,5 @@
 # Xyra San Lorenzo's Portfolio Website
-<p>I'm currently working on with 
-my personal projects to be put on the 
-Portfolio page.✨</p>
+<p>I'm currently working on my projects to include on my Portfolio page..✨</p>
 
 
 Color Palette🎨:
