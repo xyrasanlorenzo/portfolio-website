@@ -1,4 +1,4 @@
-# Xyra San Lorenzo's Portfolio Website
+# Xyra's Portfolio Website
 <p>I'm currently working on my projects to include on my Portfolio page.✨</p>
 
 
@@ -16,4 +16,5 @@ To-do:
 <li>Update About me, Portfolio, and Skills section</li>
 <li>Link websites and social medias</li>
 <li>Edit website responsiveness</li>
+<li>Improve design</li>
 </ul>
