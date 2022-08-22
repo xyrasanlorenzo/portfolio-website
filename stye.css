@@ -172,6 +172,7 @@ label.active:before{
 body.night{
     background: rgb(15, 15, 15);
     color: white;
+    background-image: url(./images/bg-black.png);
 }
 
 hr{
@@ -235,6 +236,8 @@ hr{
     border-left: none;
     border-right: none;
     background-color: #fb7da8 ;
+    font-size: 30px;
+    color: white;
 }
 
 .second-body{
@@ -293,13 +296,25 @@ hr{
     
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
 .cards{
     width: 30%;
     background-color: #d25216;;
     color: rgb(0, 0, 0);
     border-radius: 12px;
     display: inline-block;
-    margin: 10px;
+    margin: 50px 10px 10px 10px;
     justify-content: center;
     border-color: black;
     border: solid;

@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/2a4c5772be.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./images/color-icon.png" type="image/x-icon">
-    <title>Xyra San Lorenzo</title>
+    <title>divxy</title>
 </head>
 <body>
 <div class="wrapper">
@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-1">
                 <h2>Hello, I am</h2>
-                <h1>Xyra San Lorenzo</h1>
+                <h1>Asdf Ghj Klzxcvn</h1>
                 <img src="./images/arrow1.png" alt="" class="arrow-1" id="arrow1" width="80">
             </div>
 
@@ -62,11 +62,11 @@
             <br>
             <br>
             <hr>
-            <div class="page-header">
+            <div class="page-header reveal">
                 <h3>01.</h3>
                 <h1>ABOUT ME</h1>
             </div>
-        <div class="card">
+        <div class="card reveal">
             <p class="x"><i class="fa-solid fa-xmark"></i></p>
             <div class="second-body">
             <p>Lorem ipsum dolor sit amet consectetur 
@@ -82,13 +82,13 @@
 <!--THIRD PAGE-->
         <div class="thirdpage" id="sec-3">
             <hr>
-            <div class="page-header">
+            <div class="page-header reveal">
                 <h3>02.</h3>
                 <h1>PORTFOLIO</h1>
             </div>
         </div>
 
-        <main>
+        <main class="reveal">
         <div class="cards">
             <i id="folder" class="fa-solid fa-folder-closed"></i>
             <a href="" class="link"><i class="fa-solid fa-link"></i></a>
@@ -136,7 +136,7 @@
         </div>
     </main>
         <!--2ND ROW-->
-    <main>
+    <main class="reveal">
         <div class="cards">
             <i id="folder" class="fa-solid fa-folder-closed"></i>
             <a href="" class="link"><i class="fa-solid fa-link"></i></a>
@@ -184,13 +184,13 @@
     <!--FOURTH PAGE-->
     <div class="fourthpage">
         <hr>
-        <div class="page-header">
+        <div class="page-header reveal">
             <h3>03.</h3>
             <h1>SKILLS</h1>
         </div>
     </div>
-    <div class="skills">
-        <div class="front-end">
+    <div class="skills reveal">
+        <div class="front-end reveal">
             <h1>Web Developer</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorem facilis libero 
                 doloremque ratione non iure dolor aut veniam quasi rerum, voluptates quo sunt. Totam quo cum nesciunt voluptate ut!</p>
@@ -198,14 +198,15 @@
                 <i class="fa-brands fa-html5"></i>
                 <i class="fa-brands fa-html5"></i>
         </div>
-        <div class="designer">
-            <h1>Design</h1>
+        <div class="designer reveal">
+            <h1>Designer</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolorem facilis libero doloremque 
                 ratione non iure dolor aut veniam quasi rerum, voluptates quo sunt. Totam quo cum nesciunt voluptate ut!</p>
-        </div>
+        
                 <h3>Design Tools:</h3>
                 <i class="fa-brands fa-html5"></i>
                 <i class="fa-brands fa-html5"></i>
+            </div>
     </div>
 <!--IMPORTANT-->
     </div>
@@ -222,7 +223,7 @@
                 <li><i class="fa-brands fa-twitter"></i></li>
             </ul>
             <h4><i class="fa-solid fa-envelope"></i> loremipsumdolor@gmail.com | <i class="fa-solid fa-phone"></i> +639123456789</h4>
-            <p>handcrafted with <i class="fa-regular fa-heart"></i> by Xyra</p>
+            <p>handcrafted with <i class="fa-regular fa-heart"></i> by Asdf</p>
             <p>©2022, All rights reserved.</p>
     </div>
     
@@ -298,6 +299,34 @@
         }
         }
     </script>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal)
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for( var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+
+    scroll({
+                top: offsetTop,
+                behavior: 'smooth'
+    })
+
+</script>
+
 
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
