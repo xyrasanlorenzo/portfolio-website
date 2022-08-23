@@ -601,7 +601,7 @@ footer h1{
     html, body{
         overflow-x: hidden;
     }
-
+    
     :root {
       --marquee-width: 80vw;
       --marquee-height: 10vh;
@@ -654,7 +654,7 @@ footer h1{
     label:before{
         position: absolute;
         content: "";
-        width: 35px;
+        width: 19px;
         height: 18px;
         left: 0px;
         top: 0px;
@@ -666,7 +666,7 @@ footer h1{
     }
 
     label.active:before{
-        left: 0px;
+        left: 16px;
         background: #fbff11;
     }
 
