@@ -181,22 +181,22 @@ body.night{
 }
 
 hr{
-    margin-top: 130px;
+    margin-top: 50px;
     margin-bottom: 50px;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0);
     width: 30px;
     position: relative;
 }
 
 .scroll-down{
-    margin-top: 20px;
+    margin-top: 40px;
     left: 50%;
     display: flex;
     justify-content: center;
 }
 
 .scroll-down button{
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     cursor: pointer;
     border-color: black;
     border-radius: 99999px;
@@ -315,24 +315,54 @@ hr{
     width: 30%;
     background-color: #d25216;;
     color: rgb(0, 0, 0);
-    border-radius: 12px;
+    border-radius: 0 12px 12px 12px;
     display: inline-block;
     margin: 50px 10px 10px 10px;
     justify-content: center;
     border-color: black;
     border: solid;
+    position: relative;
+}
+
+.cards::after {
+    content: " ";
+    width: 50%;
+    height: 16%;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    background-color: #d25216;
+    position: absolute;
+    top: -39px;
+    left: -3px;
+    border: solid black;
+    border-bottom: none;
+}
+
+.cards1::after {
+    content: " ";
+    width: 50%;
+    height: 16%;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    background-color:#407c42;
+    position: absolute;
+    top: -37px;
+    left: -3px;
+    border: solid black;
+    border-bottom: none;
 }
 
 .cards1{
     width: 30%;
     background-color: #407c42;
     color: rgb(0, 0, 0);
-    border-radius: 12px;
+    border-radius: 0 12px 12px 12px;
     display: inline-block;
     margin: 50px 10px 10px 10px;
     justify-content: center;
     border-color: black;
     border: solid;
+    position: relative;
 }
 
 .cards:hover{
@@ -597,7 +627,7 @@ footer h1{
   }
 
   
-  @media only screen and (max-width:740px) {
+  @media screen and (max-width:740px) {
     html, body{
         overflow-x: hidden;
     }
@@ -605,9 +635,10 @@ footer h1{
     :root {
       --marquee-width: 80vw;
       --marquee-height: 10vh;
-      --marquee-elements-displayed: 2;
+      --marquee-elements-displayed: 1;
+      --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+      --marquee-animation-duration: calc(var(--marquee-elements) * 2s);
     }
-    .marquee:before, .marquee:after { width: 3rem; }
 
     .container{
         max-width: 740px;
@@ -690,15 +721,11 @@ footer h1{
         margin-right: -15%;
         margin-top: 5px;
     }
-    
-    hr{
-        margin-top: 50px;
-    }
 
     nav button{
         margin-right: 0px;
         padding: 5px 10px;
-        font-size: 10px;
+        font-size: 11px;
     }
 
     nav{
@@ -706,11 +733,11 @@ footer h1{
     }
 
     #navbar .logo{
-        width: 80px;
+        width: 100px;
     }
 
     .scroll-down{
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
 /*responsive SECOND PAGE*/
@@ -760,7 +787,35 @@ main{
     width: 100%;
     height: 20%;
     margin-bottom: 0px;
-    margin-top: 20px;
+    margin-top: 50px;
+}
+
+.cards::after {
+    content: " ";
+    width: 53%;
+    height: 13%;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    background-color: #d25216;
+    position: absolute;
+    top: -36px;
+    left: -3px;
+    border: solid black;
+    border-bottom: none;
+}
+
+.cards1::after {
+    content: " ";
+    width: 53%;
+    height: 13%;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    background-color: #407c42;
+    position: absolute;
+    top: -36px;
+    left: -3px;
+    border: solid black;
+    border-bottom: none;
 }
 
 .cards #folder{
@@ -783,7 +838,7 @@ main .cards .link{
     width: 100%;
     height: 20%;
     margin-bottom: 0px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .cards1 #folder{
@@ -806,13 +861,17 @@ main .cards1 .link{
     margin-bottom: 150px;
 }
 
+.skills h1{
+    font-size: 30px;
+}
+
 /*FOOTER*/
 footer{
     background-color: #60be63;
     padding-top: 50px;
     padding-left: 20%;
     padding-right: 20%;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     text-align: center;
     border-top: solid rgb(44, 88, 47);
 }
