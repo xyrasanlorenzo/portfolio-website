@@ -747,7 +747,6 @@ footer h1{
     padding-left: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    text-shadow: 8px 8px rgba(32, 32, 32, 0.226);
 }
 
 .card{  
@@ -798,7 +797,7 @@ main{
     background-color: #d25216;
     position: absolute;
     top: -36px;
-    left: -2.5px;
+    left: -2.3px;
     border: solid black;
     border-bottom: none;
 }
@@ -812,7 +811,7 @@ main{
     background-color: #407c42;
     position: absolute;
     top: -36px;
-    left: -2.5px;
+    left: -2.3px;
     border: solid black;
     border-bottom: none;
 }
