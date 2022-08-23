@@ -666,7 +666,7 @@ footer h1{
     }
 
     label.active:before{
-        left: 8px;
+        left: 0px;
         background: #fbff11;
     }
 
