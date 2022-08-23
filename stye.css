@@ -654,7 +654,7 @@ footer h1{
     label:before{
         position: absolute;
         content: "";
-        width: 19px;
+        width: 35px;
         height: 18px;
         left: 0px;
         top: 0px;
@@ -663,6 +663,11 @@ footer h1{
         background-color: black;
         transition: 0.4s;
     
+    }
+
+    label.active:before{
+        left: 14px;
+        background: #fbff11;
     }
 
     .row .col-1 img{
