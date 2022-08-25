@@ -339,45 +339,32 @@
     
 
     <script>
-        var content = document.getElementsByTagName('body')[0];
-        var darkMode = document.getElementById('dark-mode');
-        var logo = document.getElementById('logo');
-        var arrow1 = document.getElementById('arrow1');
-        var arrow2 = document.getElementById('arrow2');
-        var character = document.getElementById('character');
-        var scrollDown = document.getElementById('navbar-1');
+        const content = document.getElementsByTagName('body')[0];
+        const darkMode = document.getElementById('dark-mode');
+        const logo = document.getElementById('logo');
+        const arrow1 = document.getElementById('arrow1');
+        const arrow2 = document.getElementById('arrow2');
+        const character = document.getElementById('character');
+        const scrollDown = document.getElementById('navbar-1');
         const links = document.querySelectorAll('.scroll-down');
         
-
-        darkMode.addEventListener('click', function() {
+        darkMode.addEventListener('click', () => {
             darkMode.classList.toggle('active')
             content.classList.toggle('night')
             if(darkMode.classList.contains('active')){
-                logo.src = "./images/divxy white.png";
-            }else{
-                logo.src = "./images/divxy black.png";
-            }
-            if(darkMode.classList.contains('active')){
-                arrow1.src = "./images/arrow1 white.png";
-            }else{
-                arrow1.src = "./images/arrow1.png";
-            }
-            if(darkMode.classList.contains('active')){
-                arrow2.src = "./images/arrow2 white.png";
-            }else{
-                arrow2.src = "./images/arrow2.png";
-                }
-            if(darkMode.classList.contains('active')){
-                character.src="./images/char-color2.png";
-            }else{
-                character.src="./images/char-color.png";
-                }
-            if(darkMode.classList.contains('active')){
+                logo.src = "./images/divxy white.png",
+                arrow1.src = "./images/arrow1 white.png",
+                arrow2.src = "./images/arrow2 white.png",
+                character.src="./images/char-color2.png",
                 scrollDown.src="./images/scroll-down black.png";
-            }else{
+            } else {
+                logo.src = "./images/divxy black.png",
+                arrow1.src = "./images/arrow1.png",
+                arrow2.src = "./images/arrow2.png",
+                character.src="./images/char-color.png",
                 scrollDown.src="./images/scroll-down white.png";
                 }
-            })
+            }); 
 
         for (const link of links) {
             link.addEventListener('click', clickHandler);
@@ -398,14 +385,11 @@
 <script type="text/javascript">
     window.addEventListener('scroll', reveal)
     function reveal(){
-        var reveals = document.querySelectorAll('.reveal');
-
+        const reveals = document.querySelectorAll('.reveal');
         for( var i = 0; i < reveals.length; i++){
-
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
-
+            const windowheight = window.innerHeight;
+            const revealtop = reveals[i].getBoundingClientRect().top;
+            const revealpoint = 150;
             if(revealtop < windowheight - revealpoint){
                 reveals[i].classList.add('active');
             }
@@ -414,13 +398,12 @@
             }
         }
     }
-
     scroll({
                 top: offsetTop,
                 behavior: 'smooth'
-    })
-    
+    });
 </script>
+
 <script type="text/javascript">
     const root = document.documentElement;
     const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
