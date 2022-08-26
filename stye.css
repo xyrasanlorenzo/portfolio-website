@@ -639,6 +639,16 @@ footer h1{
 
   
   @media screen and (max-width:740px) {
+    header{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(185, 185, 185, 0.473);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 13px;
+    }
+
     html, body{
         overflow-x: hidden;
     }
@@ -879,46 +889,58 @@ main .cards1 .link{
 footer{
     background-color: #60be63;
     padding-top: 50px;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
     text-align: center;
     border-top: solid rgb(44, 88, 47);
 }
 
 .footer ul li{
-    margin-right: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+    display: inline-flex;
+    list-style: none;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px 0px 5px 0px;
+    font-size: 30px;
 }
 
+.footer ul li i:hover{
+    color: #ffffff;
+}
+
+.footer ul {
+    margin-right: 40px;
+}
 footer h1{
     font-family: 'Poppins', sans-serif;
     margin-top: 40px;
+    margin-bottom:30px;
     color: #407c42;
-    font-size: 25px;
+    font-size: 30px
 }
 
 .footer p{
     font-family: 'Poppins', sans-serif;
     color: rgb(31, 31, 31);
-    font-size: 11px;
+    font-size: 12px;
     
 }
 
 .footer i{
     color: rgb(31, 31, 31);
-    flex-direction: row;
     
 }
 
 .footer h4{
     color: rgb(31, 31, 31);
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 18px;
 }
 
   }
