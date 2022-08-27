@@ -341,7 +341,7 @@ hr{
     display: block;
     background-color: #d25216;
     position: absolute;
-    top: -39px;
+    top: -38px;
     left: -3px;
     border: solid black;
     border-bottom: none;
@@ -398,7 +398,7 @@ hr{
 }
 
 .title{
-    padding: 10px 15px 0px 15px;
+    padding: 0px 15px 0px 15px;
     color: white;
 }
 
@@ -407,7 +407,7 @@ hr{
 }
 
 .cards #folder{
-    padding: 15px 15px 10px 15px;
+    padding: 15px 15px 0px 15px;
     font-size: 30px;
     color: #8a360f;
 }
@@ -818,8 +818,8 @@ main{
     display: block;
     background-color: #d25216;
     position: absolute;
-    top: -36px;
-    left: -2.3px;
+    top: -33px;
+    left: -3px;
     border: solid black;
     border-bottom: none;
 }
@@ -832,8 +832,8 @@ main{
     display: block;
     background-color: #407c42;
     position: absolute;
-    top: -36px;
-    left: -2.3px;
+    top: -33px;
+    left: -3px;
     border: solid black;
     border-bottom: none;
 }
